@@ -1,0 +1,14 @@
+{% extends "./base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+    
+    <div class="position-absolute top-50 start-50 translate-middle p-5 text-bg-tertiary rounded shadow-lg">
+        <h1 class="p-5">Welcome to Better5e</h1>
+
+        <div class="d-grid gap-2">
+            <li class="btn btn-primary"><a class="text-white" href="{{ url_for('auth.register') }}">Register</a>
+            <li class="btn btn-primary"><a class="text-white" href="{{ url_for('auth.login') }}">Log In</a>
+        </div>
+    </div>
+    
+{% endblock %}
